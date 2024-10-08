@@ -1,0 +1,116 @@
+.container {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+}
+
+.product {
+    background-color: hsl(0, 0%, 100%);
+    width: 35%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    height: 400px;
+    box-shadow: 10px 5px 5px hsl(32, 37%, 93%);
+}
+
+.product-image {
+    border-radius: 10px;
+    height: 100%;
+    width: 900px;
+    background-image: url('/images/image-product-desktop.jpg');
+    background-size: cover;
+}
+
+.product-description-section {
+    padding: 0 25px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.product-type {
+    text-transform: uppercase;
+    font-size: 11px;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 0.25rem;
+}
+
+.product-name {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Fraunces';
+}
+
+.product-description {
+    font-size: 13px;
+    font-weight: 550;
+    color: hsl(228, 12%, 48%);
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.current-price {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Fraunces';
+    color: hsl(158, 36%, 37%);
+}
+
+.prev-price {
+    font-size: 12px;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    font-weight: 550;
+}
+
+.add-to-cart-button {
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 8px;
+    height: 40px;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    font-weight: 550;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icon {
+    width: 14px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        height: 98vh;
+    }
+    .product {
+        width: 95%;
+        height: 95%;
+        flex-direction: column;
+    }
+    .product-image {
+        height: 400px;
+        width: 100%;
+        background-image: url('/images/image-product-mobile.jpg');
+    }
+    .product-type {
+        font-size: 13px;
+    }
+    .product-name {
+        font-size: 36px;
+    }
+    .product-description {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.7;
+    }
+}
