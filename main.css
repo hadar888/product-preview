@@ -20,7 +20,7 @@
     border-radius: 10px;
     height: 100%;
     width: 900px;
-    background-image: url('/images/image-product-desktop.jpg');
+    background-image: url('images/image-product-desktop.jpg');
     background-size: cover;
 }
 
@@ -100,7 +100,7 @@
     .product-image {
         height: 400px;
         width: 100%;
-        background-image: url('/images/image-product-mobile.jpg');
+        background-image: url('images/image-product-mobile.jpg');
     }
     .product-type {
         font-size: 13px;
